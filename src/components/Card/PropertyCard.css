@@ -1,0 +1,76 @@
+/* src/components/PropertyCard.css */
+
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+  
+  .property-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .property-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .property-card-content {
+    padding: 15px;
+  }
+  
+  .property-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .property-card-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .property-card-price {
+    font-size: 16px;
+    color: #f60;
+    margin-bottom: 10px;
+  }
+  
+  .property-card-location,
+  .property-card-bedrooms {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .property-card-amenities {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .property-card-amenities li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .property-card-button {
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .property-card-button:hover {
+    background-color: #e55d00;
+  }
+  

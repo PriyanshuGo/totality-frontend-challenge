@@ -1,0 +1,56 @@
+/* Navbar Container */
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Navbar Links */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Navbar Links Hover Effect */
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #f0a500;
+  }
+  
+  /* Navbar Underline Animation */
+  nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f0a500;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  
+ 
