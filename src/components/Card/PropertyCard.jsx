@@ -1,8 +1,8 @@
 import React from 'react';
 import './PropertyCard.css';
 
-const PropertyCard = ({ property }) => {
-  const { image, title, description, price, location, bedrooms, amenities } = property;
+const PropertyCard = ({ property,handlebooknow }) => {
+  const { image, title, description, price, location, bedrooms, amenities} = property;
 
   return (
     <div className="property-card">
@@ -18,7 +18,7 @@ const PropertyCard = ({ property }) => {
             <li key={index}>{amenity}</li>
           ))}
         </ul> */}
-        <button className="property-card-button">Book Now</button>
+        <button className="property-card-button" onClick={()=>{handlebooknow(property)}}>Book Now</button>
       </div>
     </div>
   );
